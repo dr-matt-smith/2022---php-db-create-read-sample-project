@@ -1,0 +1,29 @@
+{
+    "name": "mattsmithdev/pdo-repo-project",
+    "type": "template",
+    "description": "A project template to make creating new pdo-crud-for-free-repositories projects easier.",
+    "keywords": ["template"],
+    "homepage": "https://github.com/dr-matt-smith/pdo-crud-for-free-repositories-example-project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matt Smith",
+            "email": "dr_matt_smith@me.com",
+            "homepage": "https://github.com/dr-matt-smith",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "mattsmithdev/pdo-crud-for-free-repositories": "^2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tudublin\\": "src"
+        }
+    },
+    "scripts": {
+        "setupdb": "php db/migrateAndLoadFixtures.php",
+        "serve": "php -S localhost:8000 -t public",
+        "test": "phpunit"
+    }
+}
